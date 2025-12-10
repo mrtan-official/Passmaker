@@ -40,4 +40,4 @@ while file:
 				print('Your password is : ',passw)
 				break
 	except:
-		time.sleep(10)
+		time.sleep(3)
