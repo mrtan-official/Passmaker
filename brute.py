@@ -14,8 +14,7 @@ try:
 	browser.set_handle_robots(False)
 except:
 	print('\n\tPlease install mechanize.\n')
-	sys.exit()
-
+	
 print('\n---------- Welcome To Facebook BruteForce ----------\n')
 file=open('passwords.txt','r')
 
