@@ -1,7 +1,7 @@
 import time
 import sys
 import mechanize
-import urllib2
+import urllib
 
 post_url='https://www.facebook.com/login.php'
 headers = {
